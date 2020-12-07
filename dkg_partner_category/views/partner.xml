@@ -30,7 +30,7 @@
                     <!-- <field name="full_name"/> -->
                     <field name="zparent"/>
                     <!-- <field name="active_id"/>
-                    <field name="partner_category"/> -->
+                    <field name="dkg_partner_category"/> -->
                 </tree>
             </field>
         </record>
