@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
 {
-    "name": "Automatic Customer Number And Product Number ",
+    "name": "Partner Category",
     "version": "13.1.1",
     'license': 'LGPL-3',
-    'author': 'Prixgen Tech Solutions Pvt. Ltd.',
-    'company': 'Prixgen Tech Solutions Pvt. Ltd.',
-    'website': 'https://www.prixgen.com',
+    'author': '',
+    'company': '',
+    'website': '',
     "summary": """
-    Automatically create the customer number from a sequence when a customer is being created.
+    Add partner category multi-company
     """,
     "description": """
-Automatic Customer Number
+Add partner category multi-company
 =========================
 Automatically create the customer number from a sequence when a customer is being created.
 
