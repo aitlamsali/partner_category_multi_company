@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="0">
+
+
+    <record model="ir.rule" id="contact_multi_company_rule">
+        <field name="name">Contact : multi-company</field>
+        <field name="model_id" ref="model_res_partner"/>
+        <field name="global" eval="True"/>
+        <field name="domain_force">[('company_id', 'in', company_ids)]</field>
+    </record>
+<!--    <record model="ir.module.category" id="module_adb_group_category">
+        <field name="name">ADB POS</field>
+        <field name="description">Helps you manage adbule pos.</field>
+        <field name="sequence">16</field>
+    </record>
+
+    <record id="group_adb_salesperson" model="res.groups">
+        <field name="name">Adb Salesperson</field>
+        <field name="help">Adb Salesperson</field>
+        <field name="category_id" ref="module_adb_group_category"/>
+    </record>
+
+    <record id="group_hide_adb_pos" model="res.groups">
+        <field name="name">Hide ADB POS</field>
+        <field name="help">Hide ADB POS</field>
+    </record>
+
+    <record id="adb_own_shift_sale_rule" model="ir.rule">
+        <field name="name">ADB Own Shift Sale</field>
+        <field name="model_id" ref="model_adb_shift_sale"/>
+        <field name="perm_read" eval="1"/>
+        <field name="perm_write" eval="0"/>
+        <field name="perm_create" eval="0"/>
+        <field name="perm_unlink" eval="0"/>
+        <field name="domain_force">[('operating_unit_id','in',[g.id for g in user.operating_unit_ids])]</field>
+    </record>
+
+-->
+<!--&lt;!&ndash;         Do not create if create shift sale policy is from POS &ndash;&gt;-->
+<!--    <record id="adb_create_shift_sale_rule" model="ir.rule">-->
+<!--        <field name="name">Create Shift Sale Rule</field>-->
+<!--        <field name="model_id" ref="model_adb_shift_sale"/>-->
+<!--&lt;!&ndash;         <field name="perm_read" eval="0"/>  &ndash;&gt;-->
+<!--&lt;!&ndash;         <field name="perm_write" eval="1"/>  &ndash;&gt;-->
+<!--         <field name="perm_create" eval="0"/>-->
+<!--&lt;!&ndash;         <field name="perm_unlink" eval="1"/>  &ndash;&gt;-->
+<!--        <field name="domain_force">['|',('operating_unit_id.merge_shift_sale_from_pos','=',True),('operating_unit_id','in',[g.id for g in user.operating_unit_ids])]</field>-->
+<!--	</record>-->
+
+
+</odoo>
